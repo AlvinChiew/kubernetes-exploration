@@ -15,19 +15,22 @@
 5. `kubectl apply -f webapp.yaml`
     - create webapp deployment & service
 
-6. `kubectl get all`, `kubectl get configmap`, `kubectl get secret`, `kubectl describe service webapp-service`, `kubectl describe pod webapp-deployment-768fbb8d95-kp2ht`,  `kubectl logs webapp-deployment-768fbb8d95-kp2ht -f`
+6. `minikube service webapp-service`
+    - serve webapp on minikube
+
+7. `kubectl get all`, `kubectl get configmap`, `kubectl get secret`, `kubectl describe service webapp-service`, `kubectl describe pod webapp-deployment-768fbb8d95-kp2ht`,  `kubectl logs webapp-deployment-768fbb8d95-kp2ht -f`
     - more status check
 
-7. `kubectl get svc`, `minikube ip`
+8. `kubectl get svc`, `minikube ip`
     - check service port and ip 
 
-8. `kubectl delete secret mysecret`
+9. `kubectl delete secret mysecret`
     - delete secret
 
-9. `kubectl delete all --all`
+10. `kubectl delete all --all`
     - delete all resources
 
-10. `kubectl drain minikube --ignore-daemonsets --delete-local-data --force`, `kubectl delete node minikube`
+11. `kubectl drain minikube --ignore-daemonsets --delete-local-data --force`, `kubectl delete node minikube`, `minikube stop`
     - decommision minikube
     
 
